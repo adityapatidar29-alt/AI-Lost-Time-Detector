@@ -1,0 +1,11 @@
+AI LOST TIME DETECTOR
+BEST RANDOM FOREST HYPERPARAMETERS
+==================================================
+
+max_depth: 20
+min_samples_leaf: 2
+min_samples_split: 5
+n_estimators: 200
+
+Best Cross-Validation Macro F1: 0.6395
+Best Cross-Validation Macro F1: 63.95%

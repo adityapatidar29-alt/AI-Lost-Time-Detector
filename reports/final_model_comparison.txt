@@ -1,0 +1,113 @@
+AI LOST TIME DETECTOR
+FINAL MODEL COMPARISON
+==================================================
+
+MODEL 1: BASELINE RANDOM FOREST
+--------------------------------------------------
+Features: 10 original features
+
+Accuracy:
+66.30%
+
+Macro F1:
+0.63
+
+Highly Unproductive Recall:
+0.48
+
+Highly Unproductive F1:
+0.55
+
+
+MODEL 2: ENGINEERED RANDOM FOREST
+--------------------------------------------------
+Features: 18 features
+
+Accuracy:
+66.75%
+
+Macro F1:
+0.64
+
+Highly Unproductive Recall:
+0.51
+
+Highly Unproductive F1:
+0.57
+
+
+MODEL 3: TUNED RANDOM FOREST
+--------------------------------------------------
+Features: 18 features
+
+Hyperparameters:
+n_estimators = 200
+max_depth = 20
+min_samples_split = 5
+min_samples_leaf = 2
+class_weight = balanced
+
+Accuracy:
+66.50%
+
+Macro F1:
+0.64
+
+Highly Unproductive Recall:
+0.57
+
+Highly Unproductive F1:
+0.60
+
+
+CROSS-VALIDATION RESULT
+--------------------------------------------------
+
+Engineered Random Forest:
+
+Mean Accuracy:
+65.22%
+
+Standard Deviation:
+1.22 percentage points
+
+Mean Macro F1:
+63.67%
+
+
+HYPERPARAMETER TUNING RESULT
+--------------------------------------------------
+
+Best Cross-Validation Macro F1:
+63.95%
+
+Best Parameters:
+
+n_estimators = 200
+max_depth = 20
+min_samples_split = 5
+min_samples_leaf = 2
+
+
+FINAL ANALYSIS
+--------------------------------------------------
+
+The engineered Random Forest achieved the highest
+hold-out test accuracy of 66.75%.
+
+However, the tuned Random Forest achieved the highest
+recall for the Highly Unproductive class at 57%.
+
+Since the primary objective of the AI Lost Time Detector
+is to identify unproductive behavior, detection of the
+Highly Unproductive class is an important evaluation
+criterion.
+
+The tuned Random Forest therefore provides a strong
+candidate for the final model because it improves the
+detection of highly unproductive sessions while
+maintaining similar overall performance.
+
+Final model selection will consider accuracy, macro F1,
+class-wise performance, and the project's objective.
+

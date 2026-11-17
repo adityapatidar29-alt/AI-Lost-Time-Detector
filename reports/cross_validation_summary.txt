@@ -1,0 +1,108 @@
+AI LOST TIME DETECTOR
+CROSS-VALIDATION SUMMARY
+==================================================
+
+Model:
+Random Forest Classifier with Engineered Features
+
+Number of Features:
+18
+
+Cross-Validation Method:
+5-Fold Stratified Cross-Validation
+
+Random State:
+42
+
+
+FOLD RESULTS
+--------------------------------------------------
+
+Fold 1:
+Accuracy    = 65.80%
+Macro F1    = 63.94%
+Weighted F1 = 65.53%
+
+Fold 2:
+Accuracy    = 66.85%
+Macro F1    = 64.34%
+Weighted F1 = 66.85%
+
+Fold 3:
+Accuracy    = 65.75%
+Macro F1    = 65.84%
+Weighted F1 = 65.68%
+
+Fold 4:
+Accuracy    = 64.30%
+Macro F1    = 64.19%
+Weighted F1 = 64.29%
+
+Fold 5:
+Accuracy    = 63.40%
+Macro F1    = 60.02%
+Weighted F1 = 63.30%
+
+
+CROSS-VALIDATION AVERAGE
+--------------------------------------------------
+
+Mean Accuracy:
+65.22%
+
+Standard Deviation:
+1.22 percentage points
+
+Mean Macro F1:
+63.67%
+
+Macro F1 Standard Deviation:
+1.94 percentage points
+
+Mean Weighted F1:
+65.13%
+
+Weighted F1 Standard Deviation:
+1.22 percentage points
+
+
+HOLD-OUT TEST RESULT
+--------------------------------------------------
+
+Accuracy:
+66.75%
+
+
+INTERPRETATION
+--------------------------------------------------
+
+The 5-fold stratified cross-validation produced a mean
+accuracy of 65.22% with a standard deviation of 1.22
+percentage points.
+
+The relatively small standard deviation indicates that
+the model performance is reasonably stable across the
+five validation folds.
+
+The hold-out test accuracy of 66.75% is slightly higher
+than the cross-validation mean. This difference is
+expected because the hold-out test set represents only
+one particular train-test split.
+
+Therefore, cross-validation provides a more robust
+estimate of the expected model performance.
+
+
+CONCLUSION
+--------------------------------------------------
+
+The engineered Random Forest model demonstrates
+moderate and reasonably stable predictive performance.
+
+The cross-validation results confirm that the model's
+performance is not strongly dependent on a single
+train-test split.
+
+Further model optimization will be performed to
+determine whether performance can be improved before
+selecting the final model.

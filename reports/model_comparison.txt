@@ -1,0 +1,107 @@
+AI LOST TIME DETECTOR
+MODEL COMPARISON
+==================================================
+
+BASELINE MODEL
+--------------------------------------------------
+Algorithm:
+Random Forest Classifier
+
+Features:
+10 original behavioral features
+
+Accuracy:
+66.30%
+
+Macro F1:
+0.63
+
+Weighted F1:
+0.66
+
+Highly Unproductive Recall:
+0.48
+
+Highly Unproductive F1:
+0.55
+
+
+ENGINEERED FEATURES MODEL
+--------------------------------------------------
+Algorithm:
+Random Forest Classifier
+
+Features:
+10 original + 8 engineered features
+
+Total Features:
+18
+
+Accuracy:
+66.75%
+
+Macro F1:
+0.64
+
+Weighted F1:
+0.67
+
+Highly Unproductive Recall:
+0.51
+
+Highly Unproductive F1:
+0.57
+
+
+COMPARISON
+--------------------------------------------------
+
+Accuracy Improvement:
+66.30% -> 66.75%
+
+Improvement:
++0.45 percentage points
+
+Macro F1 Improvement:
+0.63 -> 0.64
+
+Weighted F1 Improvement:
+0.66 -> 0.67
+
+Highly Unproductive Recall:
+0.48 -> 0.51
+
+Highly Unproductive F1:
+0.55 -> 0.57
+
+
+TOP ENGINEERED FEATURES
+--------------------------------------------------
+
+1. engagement_score
+2. activity_score
+3. switching_pressure
+4. switch_rate
+5. typing_speed
+6. distraction_index
+
+
+CONCLUSION
+--------------------------------------------------
+
+The engineered-features Random Forest model achieved
+a slightly better performance than the baseline model.
+
+Accuracy increased from 66.30% to 66.75%.
+
+The recall of the Highly Unproductive class improved
+from 48% to 51%, which is particularly relevant to
+the objective of detecting lost productive time.
+
+The improvement is modest rather than dramatic.
+This indicates that the original behavioral features
+already captured a substantial amount of the useful
+information in the dataset.
+
+Further model evaluation and optimization will be
+performed before selecting the final model.

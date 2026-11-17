@@ -1,0 +1,88 @@
+AI LOST TIME DETECTOR
+BASELINE MODEL SUMMARY
+==============================================
+
+Model:
+Random Forest Classifier
+
+Dataset:
+Synthetic Productivity Dataset
+
+Training Samples:
+8000
+
+Testing Samples:
+2000
+
+Number of Features:
+10
+
+Baseline Accuracy:
+66.30%
+
+Classification Performance:
+----------------------------------------------
+Highly Unproductive:
+Precision = 0.65
+Recall    = 0.48
+F1-score  = 0.55
+
+Distracted:
+Precision = 0.57
+Recall    = 0.67
+F1-score  = 0.62
+
+Normal:
+Precision = 0.65
+Recall    = 0.58
+F1-score  = 0.62
+
+Focused:
+Precision = 0.73
+Recall    = 0.77
+F1-score  = 0.75
+
+Macro Average F1:
+0.63
+
+Weighted Average F1:
+0.66
+
+
+KEY OBSERVATIONS
+----------------------------------------------
+
+1. The baseline Random Forest model achieved
+   an accuracy of 66.30%.
+
+2. The Focused class achieved the best performance
+   with an F1-score of 0.75.
+
+3. The Highly Unproductive class achieved an
+   F1-score of 0.55 and recall of 0.48.
+
+4. The confusion matrix shows that many
+   Highly Unproductive sessions are classified
+   as Distracted.
+
+5. Activity Score is the most important baseline
+   feature.
+
+6. Switch Rate is the second most important
+   feature.
+
+7. The baseline model provides a reference point
+   for evaluating the effectiveness of engineered
+   features.
+
+CONCLUSION
+----------------------------------------------
+
+The baseline model provides moderate predictive
+performance with 66.30% accuracy. However, the
+model has difficulty distinguishing Highly
+Unproductive behavior from Distracted behavior.
+
+Therefore, feature engineering and model
+optimization will be performed in the next stage
+to improve productivity-state detection.

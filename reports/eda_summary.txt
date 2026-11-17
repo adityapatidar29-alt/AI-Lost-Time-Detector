@@ -1,0 +1,61 @@
+AI LOST TIME DETECTOR
+EDA SUMMARY
+==============================
+
+Dataset:
+- Total records: 10,000
+- Total features: 12
+- Missing values: 0
+- Duplicate records: 0
+
+Productivity Distribution:
+- Normal: 40.75%
+- Focused: 34.68%
+- Distracted: 19.95%
+- Highly Unproductive: 4.62%
+
+Key Findings:
+
+1. Productivity Class Distribution
+The dataset contains four productivity categories:
+Focused, Normal, Distracted, and Highly Unproductive.
+The classes are not perfectly balanced, with Highly Unproductive
+being the smallest class.
+
+2. Typing Speed
+Focused records generally show higher typing activity than
+Distracted and Highly Unproductive records. However, there is
+overlap between classes, indicating that typing speed alone
+cannot determine productivity.
+
+3. Idle Time
+Idle time provides an important behavioral signal. Higher idle
+activity is generally associated with lower productivity levels.
+
+4. Application Switching
+Application switching provides another potential distraction
+signal. Frequent switching can indicate fragmented attention,
+although switching applications does not always mean
+unproductive behavior.
+
+5. Correlation Analysis
+Several behavioral features show relationships with each other.
+Derived features such as idle_ratio and switch_rate are naturally
+related to their underlying variables.
+
+6. Time-of-Day Analysis
+Activity levels vary across different hours in the synthetic
+dataset. This suggests that time-of-day can be considered as a
+contextual feature.
+
+7. Overall Conclusion
+The EDA suggests that productivity should be predicted using
+multiple behavioral features rather than relying on a single
+variable. Typing activity, mouse activity, idle time, application
+switching, session duration, breaks, and time-of-day can be
+combined to build a machine learning model.
+
+Important Note:
+This dataset is synthetic and is being used to develop and test
+the initial machine learning pipeline. Real-world behavioral
+data can be integrated in a later phase.
